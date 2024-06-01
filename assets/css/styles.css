@@ -281,6 +281,7 @@ header {
     .main-container {
         grid-area: main;
         width: 420px;
+        margin-top: -20px;
     }
 
     .aside-container {
@@ -329,6 +330,7 @@ header {
         grid-template-areas: 
         "hero hero"
         "title main-content";
+        margin-top: 0;
     }
 
     .hero {
@@ -361,6 +363,7 @@ header {
     .main-container {
         width: 600px;
         display: grid;
+        margin-top: 0;
     }
 
     .aside-container {
