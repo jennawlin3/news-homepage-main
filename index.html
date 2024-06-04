@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Frontend Mentor | News homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Age calculator app</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -17,39 +17,102 @@
   </style>
 </head>
 <body>
-<main class="container">
-  <section class="form-container">
-    <form id="form">
-    <div class="day-container">
-      <label>Day</label>
-    <input type="number" name="day" id="day" placeholder="DD" maxlength="2" min="1" max="31">
-    <div class="error day-error">This field is required</div>
-    </div>
-    <div class="month-container">
-      <label>Month</label>
-    <input type="number" name="month" id="month" placeholder="MM" maxlength="2" min="1" max="12">
-    <div class="error month-error">This field is required</div>
-    </div>
-    <div class="year-container">
-      <label>Year</label>
-    <input type="number" name="year" id="year" placeholder="YYYY" maxlength="4" max="2024">
-    <div class="error year-error">This field is required</div>
-    </div>
-    <div class="button-container">
-    <button type="submit" id="submit"><img src="assets/images/icon-arrow.svg"></button>      
-    </div>
-  </form>
-  </section>
-<section class="result">
-  <div id="years-result"><span class="color" id="year-result">- -</span> years</div>
-  <div id="months-result"><span class="color" id="month-result">- -</span> months</div>
-  <div id="days-result"><span class="color" id="day-result">- -</span> days</div>
+  <div class="container">
+<header class="header-bar">
+  <div class="logo">
+    <img src="./assets/images/logo.svg">
+  </div>
+  <div class="navbar_mobile">
+    <a id="navbar-btn"><span><img src="./assets/images/icon-menu.svg" id="btn-icon"></span></a>
+    <ul class="navbar_ul-mobile">
+      <li class="navbar_li-mobile"><a href="#">Home</a></li>
+      <li class="navbar_li-mobile"><a href="#">New</a></li>
+      <li class="navbar_li-mobile"><a href="#">Popular</a></li>
+      <li class="navbar_li-mobile"><a href="#">Trending</a></li>
+      <li class="navbar_li-mobile"><a href="#">Categories</a></li>
+    </ul>
+  </div>
+  <div class="navbar_desktop">
+    <ul class="navbar_ul-desktop">
+      <li class="navbar_li-desktop"><a href="#">Home</a></li>
+      <li class="navbar_li-desktop"><a href="#">New</a></li>
+      <li class="navbar_li-desktop"><a href="#">Popular</a></li>
+      <li class="navbar_li-desktop"><a href="#">Trending</a></li>
+      <li class="navbar_li-desktop"><a href="#">Categories</a></li>
+    </ul>
+  </div>
+</header>
+<main class="main-container">
+<section class="hero">
+  <picture class="hero-container">
+    <source srcset="./assets/images/image-web-3-desktop.jpg" alt="Hero image desktop" media="(min-width:768px)">
+    <img src="./assets/images/image-web-3-mobile.jpg" alt="Hero image mobile">
+  </picture>
+</section>
+<section class="title">
+  <h1>The Bright Future of Web 3.0?</h1>
+</section>
+<section class="content">
+  <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.</p>
+  <p>But is it really fulfilling its promise?</p>
+  <button id="read-more_btn">Read more</button>
 </section>
 </main>
+<aside class="aside-container">
+  <h2>New</h2>
+<section class="one">
+  <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+  <p>Will hydrogen-fueled cars ever catch up to EVs?
+</p>
+</section>
+<section class="two">
+  <h3><a href="#">The Downsides of AI Artistry</a></h3>
+  <p>What are the possible adverse effects of on-demand AI image generation?
+</p>
+</section>
+<section class="three">
+  <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+  <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.
+</p>
+</section>
+</aside>
+<section class="article-container">
+<article class="art-one">
+  <div class="art-img">
+    <img src="./assets/images/image-retro-pcs.jpg" alt="Retro computer">
+  </div>
+  <div class="art-content">
+  <h2 class="art-number">01</h2>
+  <h3><a href="#">Reviving Retro PCs</a></h3>
+  <p>What happens when old PCs are given modern upgrades?</p>    
+  </div>
+</article>
+<article class="art-two">
+  <div class="art-img">
+    <img src="./assets/images/image-top-laptops.jpg" alt="Keyboard laptop">
+  </div>
+  <div class="art-content">
+  <h2 class="art-number">02</h2>
+  <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+  <p>Our best picks for various needs and budgets.</p>    
+  </div>
+</article>
+<article class="art-three">
+  <div class="art-img">
+    <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming">
+  </div>
+  <div class="art-content">
+  <h2 class="art-number">03</h2>
+  <h3><a href="#">The Growth of Gaming</a></h3>
+  <p>How the pandemic has sparked fresh opportunities.</p>    
+  </div>
+</article>
+</section>
+</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.linkedin.com/in/jenn-acosta7/">Jenn Acosta</a>.
   </div>
-  <script src="app/app.js"></script>
+  <script src="./app/app.js"></script>
 </body>
 </html>
